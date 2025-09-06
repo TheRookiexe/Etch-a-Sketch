@@ -39,6 +39,32 @@ boxes.forEach(box => {
 const slider = document.querySelector("#sketch-board-range");
 const sliderOp = document.querySelector('#rangeValue');
 
+function clearGrid(){
+    while(container.firstChild){
+        container.removeChild(container.firstChild);
+    }
+}
+
+function buildGrid(n){
+    clearGrid();
+    grids(n,n);
+    const boxes = document.querySelectorAll('.sqs');
+    boxes.forEach(box => {
+        box.addEventListener('mousedown', ()=>{
+            box.style.backgroundColor = 'yellow';
+        });
+
+        box.addEventListener('mouseenter', ()=>{
+            if (mousedown){
+                box.style.backgroundColor = 'yellow';
+            }
+        });
+    });
+}
+
 slider.addEventListener('input', ()=>{
     sliderOp.textContent = slider.value;
+    buildGrid(parseInt(slider.value));
 });
+
+
