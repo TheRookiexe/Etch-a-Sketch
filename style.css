@@ -1,18 +1,33 @@
 body{
     background-color: #F6F1E9;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    margin: 0px;
 }
-
+.title {
+    display: flex;
+    background-color: darkcyan;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+.header{
+    font-family: 'TheGoodMonolith', sans-serif;
+    background-color: darkcyan;
+    font-size: 80px;
+    font-weight: 600;
+    height: 110px;
+    padding: 4px;
+}
 .container {
     background-color: gray;
-    padding: 2px;
+    padding: 1px;
     margin: 20px;
     border: 2px black solid;
     display: flex;
-    width: fit-content;
     flex-wrap: wrap;
 }
 
