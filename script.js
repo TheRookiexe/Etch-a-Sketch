@@ -1,5 +1,5 @@
 const container = document.querySelector('.container');
-const containerSize = 600;
+const containerSize = 600;                                  
 const colorPicker = document.querySelector('#colorPicker');
 const slider = document.querySelector("#sketch-board-range");
 const sliderOp = document.querySelector('#rangeValue');
