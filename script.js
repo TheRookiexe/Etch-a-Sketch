@@ -67,4 +67,7 @@ slider.addEventListener('input', ()=>{
     buildGrid(parseInt(slider.value));
 });
 
-
+const clear = document.querySelector("#refreshButton");
+clear.addEventListener('click', ()=>{
+    location.reload();
+});

@@ -36,8 +36,8 @@ body{
     border: 1px black solid;
     padding: 2px;
     flex: 1;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     box-sizing: border-box;
 }
 
@@ -47,4 +47,26 @@ body{
     gap: 20px;
     font-size: 20px;
     font-weight: 600;
+}
+input {
+    cursor: pointer;
+}
+
+.button-ref {
+    margin-top: 20px;
+}
+button {
+    border: 2px black solid;
+    border-radius: 5px;
+    height: 27px;
+    width: 70px;
+    font: 600;
+    font-size: 19px;
+    transition: all 0.2s ease;
+}
+
+button:hover{
+    transition: all 0.2s ease;
+    transform: scale(1.05);
+    cursor: pointer;
 }
