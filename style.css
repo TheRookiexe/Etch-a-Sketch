@@ -29,6 +29,11 @@ body{
     border: 2px black solid;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
 }
 
 .sqs{
@@ -36,8 +41,6 @@ body{
     border: 1px black solid;
     padding: 2px;
     flex: 1;
-    height: 25px;
-    width: 25px;
     box-sizing: border-box;
 }
 
