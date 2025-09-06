@@ -63,10 +63,27 @@ button {
     font: 600;
     font-size: 19px;
     transition: all 0.2s ease;
+    padding: 2px;
 }
 
 button:hover{
     transition: all 0.2s ease;
     transform: scale(1.05);
+    cursor: pointer;
+}
+
+.clr-select {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#colorPicker {
+    border: 2px black solid;
+    border-radius: 9px;
+    padding: 0px;
+    background: none;
     cursor: pointer;
 }

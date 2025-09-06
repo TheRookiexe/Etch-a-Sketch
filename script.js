@@ -24,14 +24,17 @@ document.addEventListener('mouseup', ()=>{
 });
 
 const boxes = document.querySelectorAll('.sqs');
+
+const colorPicker = document.querySelector('#colorPicker')
+
 boxes.forEach(box => {
     box.addEventListener('mousedown', ()=>{
-        box.style.backgroundColor = 'yellow';
+        box.style.backgroundColor = colorPicker.value;
     });
 
     box.addEventListener('mouseenter', ()=>{
         if (mousedown){
-            box.style.backgroundColor = 'yellow';
+            box.style.backgroundColor = colorPicker.value;
         }
     });
 });
@@ -51,12 +54,12 @@ function buildGrid(n){
     const boxes = document.querySelectorAll('.sqs');
     boxes.forEach(box => {
         box.addEventListener('mousedown', ()=>{
-            box.style.backgroundColor = 'yellow';
+            box.style.backgroundColor = colorPicker.value;
         });
 
         box.addEventListener('mouseenter', ()=>{
             if (mousedown){
-                box.style.backgroundColor = 'yellow';
+                box.style.backgroundColor = colorPicker.value;
             }
         });
     });
