@@ -16,7 +16,6 @@ function grids(n,k){
 grids(16,16);
 
 let mousedown = false;
-
 document.addEventListener('mousedown', ()=>{
     mousedown = true;
 });
@@ -25,7 +24,6 @@ document.addEventListener('mouseup', ()=>{
 });
 
 const boxes = document.querySelectorAll('.sqs');
-
 boxes.forEach(box => {
     box.addEventListener('mousedown', ()=>{
         box.style.backgroundColor = 'yellow';
@@ -36,4 +34,11 @@ boxes.forEach(box => {
             box.style.backgroundColor = 'yellow';
         }
     });
+});
+
+const slider = document.querySelector("#sketch-board-range");
+const sliderOp = document.querySelector('#rangeValue');
+
+slider.addEventListener('input', ()=>{
+    sliderOp.textContent = slider.value;
 });
